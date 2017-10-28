@@ -8,7 +8,7 @@
     <script src="jquery-3.2.1.min.js"></script>
 </head>
 <body onload="load()">
-<form class="form-horizontal" role="form" method="post" action="formhandling.php">
+<form class="form-horizontal" role="form" method="post" action="js/form-action.php">
     <div class="form-group">
         <label for="name" class="col-sm-2 control-label">Gif-SearchBox</label>
         <div class="col-sm-10">
@@ -56,6 +56,7 @@
         </div>
         <div class="form-group">
             <div class="col-sm-10 col-sm-offset-2">
+                <input id="urls" name="urls" type="text" hidden>
                 </form>
             </div>
         </div>
