@@ -117,6 +117,18 @@ function stopRotateWheel() {
     var text = options[index]
     ctx.fillText(text, 250 - ctx.measureText(text).width / 2, 250 + 10);
     ctx.restore();
+    if(text=="Gif-Complaint") {
+        window.location.replace("form.php")
+    }
+    else if(text=="Text To Speech") {
+        window.location.replace("form.php")
+    }
+    else if(text=="Morse Code") {
+        window.location.replace("form.php")
+    }
+    else if(text=="Emoji Mayhem") {
+        window.location.replace("form.php")
+    }
 }
 
 function easeOut(t, b, c, d) {
