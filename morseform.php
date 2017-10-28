@@ -4,6 +4,7 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="css/rotate.css" rel="stylesheet">
     <script src="js/giphy.js"></script>
     <script src="jquery-3.2.1.min.js"></script>
 </head>

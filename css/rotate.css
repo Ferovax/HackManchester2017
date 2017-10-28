@@ -9,6 +9,6 @@
 
 body {
   animation-name: spinning-dom;
-  animation-duration: 3600s;
+  animation-duration: 1800s;
   animation-iteration-count: infinite;
 }
