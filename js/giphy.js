@@ -38,7 +38,9 @@ function dataLoad(data) {
 
 function submitImage(uri, text){
     $("<img>").attr("src", uri).appendTo("#imageSubmission");
+    $("#urls").val($("#urls").val() + uri + ",");
     var text = $("#searchBox").val();
     $("<p>").text(text.substring(0,text.length-2)).appendTo("#imageSubmission");
     $("#imageSelection").html("");
+    $("#searchBox").val("");
 }
