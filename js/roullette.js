@@ -124,7 +124,7 @@ function stopRotateWheel() {
         window.location.replace("form.php")
     }
     else if(text=="Morse Code") {
-        window.location.replace("form.php")
+        window.location.replace("morsecode.php")
     }
     else if(text=="Emoji Mayhem") {
         window.location.replace("form.php")
