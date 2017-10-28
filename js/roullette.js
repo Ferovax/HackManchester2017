@@ -46,7 +46,7 @@ function drawRouletteWheel() {
         ctx.strokeStyle = "black";
         ctx.lineWidth = 2;
 
-        ctx.font = 'bold 12px Helvetica, Arial';
+        ctx.font = '12px Helvetica, Arial';
 
         for(var i = 0; i < options.length; i++) {
             var angle = startAngle + i * arc;
@@ -60,10 +60,10 @@ function drawRouletteWheel() {
             ctx.fill();
 
             ctx.save();
-            ctx.shadowOffsetX = -1;
-            ctx.shadowOffsetY = -1;
-            ctx.shadowBlur    = 0;
-            ctx.shadowColor   = "rgb(220,220,220)";
+            //ctx.shadowOffsetX = -1;
+            //ctx.shadowOffsetY = -1;
+            //ctx.shadowBlur    = 0;
+            //ctx.shadowColor   = "rgb(220,220,220)";
             ctx.fillStyle = "black";
             ctx.translate(250 + Math.cos(angle + arc / 2) * textRadius,
                 250 + Math.sin(angle + arc / 2) * textRadius);
@@ -106,17 +106,8 @@ function rotateWheel() {
     drawRouletteWheel();
     spinTimeout = setTimeout('rotateWheel()', 30);
 }
-
-function stopRotateWheel() {
-    clearTimeout(spinTimeout);
-    var degrees = startAngle * 180 / Math.PI + 90;
-    var arcd = arc * 180 / Math.PI;
-    var index = Math.floor((360 - degrees % 360) / arcd);
-    ctx.save();
-    ctx.font = 'bold 30px Helvetica, Arial';
-    var text = options[index]
-    ctx.fillText(text, 250 - ctx.measureText(text).width / 2, 250 + 10);
-    ctx.restore();
+var text;
+function displayResultName() {
     if(text=="Gif-Complaint") {
         window.location.replace("form.php")
     }
@@ -129,6 +120,18 @@ function stopRotateWheel() {
     else if(text=="Emoji Mayhem") {
         window.location.replace("form.php")
     }
+}
+function stopRotateWheel() {
+    setTimeout(displayResultName, 1000)
+    clearTimeout(spinTimeout);
+    var degrees = startAngle * 180 / Math.PI + 90;
+    var arcd = arc * 180 / Math.PI;
+    var index = Math.floor((360 - degrees % 360) / arcd);
+    ctx.save();
+    ctx.font = 'bold 30px Helvetica, Arial';
+    text = options[index]
+    ctx.fillText(text, 250 - ctx.measureText(text).width / 2, 250 + 10);
+    ctx.restore();
 }
 
 function easeOut(t, b, c, d) {
