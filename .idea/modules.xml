@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/HackManchester2017.iml" filepath="$PROJECT_DIR$/.idea/HackManchester2017.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/MVCtemplate.iml" filepath="$PROJECT_DIR$/.idea/MVCtemplate.iml" />
     </modules>
   </component>
 </project>
+
