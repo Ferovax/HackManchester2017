@@ -8,6 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+
     <title>Red Summit Customer Support</title>
 
     <!-- Bootstrap Core CSS -->
@@ -22,7 +23,7 @@
 
   </head>
 
-  <body onload="load()">
+  <body>
     <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
       <i class="fa fa-bars"></i>
@@ -40,13 +41,6 @@
         </li>
         <li>
           <a class="js-scroll-trigger" href="aboutus.html">About</a>
-          <a class="js-scroll-trigger" href="#about">About</a>
-        </li>
-        <li>
-          <a class="js-scroll-trigger" href="#services">Services</a>
-        </li>
-        <li>
-          <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
         </li>
         <li>
           <a class="js-scroll-trigger" href="#contact" onclick=$( "#menu-close").click();>Contact</a>
@@ -60,7 +54,7 @@
         <h1>Red Summit Support</h1>
         <h3>The most interesting complaint system in the galaxy</h3>
         <br>
-        <a href="form.php" class="btn btn-dark btn-lg js-scroll-trigger">Make a complaint</a>
+        <a href="#services" class="btn btn-dark btn-lg js-scroll-trigger">Make a complaint</a>
       </div>
     </header>
 
@@ -73,7 +67,7 @@
           <div class="col-lg-10 mx-auto">
             <h2>Search for a company to annoy about their service</h2>
 
-            <h2>Our Services</h2>
+            <h2>Services</h2>
 
             <hr class="small">
             <div class="row">
@@ -87,7 +81,7 @@
                     <strong>BT</strong>
                   </h4>
                   <p>Complain about BT</p>
-                  <a href="#" class="btn btn-light">Make a Complaint</a>
+                  <a href="#wheel" class="btn btn-light">Make a Complaint</a>
                   </h4>
                 </div>
               </div>
@@ -101,7 +95,7 @@
                     <strong>British Gas</strong>
                   </h4>
                   <p>Moan about having no gas</p>
-                  <a href="#" class="btn btn-light">Make a Complaint</a>
+                  <a href="#wheel" class="btn btn-light">Make a Complaint</a>
                   </h4>
                 </div>
               </div>
@@ -115,7 +109,7 @@
                     <strong>EDF</strong>
                   </h4>
                   <p>Denounce EDF</p>
-                  <a href="#" class="btn btn-light">Make a complaint</a>
+                  <a href="#wheel" class="btn btn-light">Make a complaint</a>
                   </h4>
                 </div>
               </div>
@@ -129,7 +123,7 @@
                     <strong>USwitch</strong>
                   </h4>
                   <p>Grumble about no electric</p>
-                  <a href="#" class="btn btn-light">Make a Complaint</a>
+                  <a href="#wheel" class="btn btn-light">Make a Complaint</a>
                   </h4>
                 </div>
               </div>
@@ -142,6 +136,12 @@
       </div>
       <!-- /.container -->
     </section>
+      <!--/.wheel-->
+    <div id="wheel">
+        <input type="button" value="spin" style="float:left;" id="spin" />
+        <canvas id="canvas" width="500" height="500"></canvas>
+        <script src="js/roullette.js"></script>
+    </div>
 
 
 
