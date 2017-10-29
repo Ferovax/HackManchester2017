@@ -12,7 +12,7 @@ body {
 form {
 
     animation-name: spinning-dom;
-    animation-duration: 30s;
+    animation-duration: 40s;
     animation-iteration-count: infinite;
     padding: 50px;
 }
