@@ -8,7 +8,7 @@
     <link href="css/rotate.css" rel="stylesheet">
 </head>
 <body>
-<form class="form-horizontal" role="form" method="post" action="morsecode.php">
+<form class="form-horizontal" role="form" method="post" action="rotary-handling.php">
 <div class="form-group">
     <label for="name" class="col-sm-2 control-label">Phone Number</label>
     <div class="col-sm-10">
@@ -16,6 +16,7 @@
         <canvas id="retrophone"></canvas>
         <script src="js/rotaryphone.js"></script>
     </div>
+    <input type="submit">
 </div>
 </form>
 </body>
