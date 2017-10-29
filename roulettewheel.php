@@ -24,10 +24,10 @@
 </head>
 
 <body>
-<section id="complaint" class="bg-info text-white row text-center">
+<section id="complaint" class="bg-primary text-white row text-center">
     <div class="container">
         <div class="row">
-            <div class="col-lg-10 mx-auto center-block">
+            <div class=" mx-auto center-block">
                 <hr class="small">
                 <h2>
                     Spin the wheel to enter information!
@@ -38,7 +38,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-10 mx-auto center-block">
+            <div class="mx-auto center-block">
                 <canvas id="canvas" width="500" height="500"></canvas>
                 <script src="js/roullette.js"></script>
             </div>

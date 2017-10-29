@@ -9,6 +9,8 @@
             //setTimeout(timefunction, 2000);
         }
         function timefunction(){
+            sessionStorage.setItem('gif', "<?php echo $_POST['urls'];?>,");
+            //alert(sessionStorage.getItem('gif'));
             window.location.replace("/roulettewheel.php");
         }
     </script>
@@ -38,7 +40,7 @@ $sql = "INSERT INTO urls (ID, urlString) VALUES (NULL , '$urls')";
                     if ($result === TRUE) {
                         echo "We have reviewed your complaint, are you sure it wasn't your fault?";
                         echo "<hr class=\"small\">";
-                        echo "<a href='/roulettewheel.php' class='btn btn-primary'> No </a>";
+                        echo "<a href='javascript:timefunction()' class='btn btn-primary'> No </a>";
                     } else {
                         echo "Error: " . $sql . "<br>" . $conn->error;
                     }
