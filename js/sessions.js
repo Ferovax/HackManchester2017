@@ -3,7 +3,7 @@ function sessionLoad(){
     var data = sessionStorage.getItem('key');
     if(data == null){
         sessionStorage.clear();
-        sessionStorage.setItem('key', 'name,email,number,complaint');
+        sessionStorage.setItem('key', 'Name,Email,Phone Number,Complaint');
         data = sessionStorage.getItem('key');
     }
     //"Gif-Complaint", "Morse Code", "Text To Speech", "Emoji-Mayhem"
