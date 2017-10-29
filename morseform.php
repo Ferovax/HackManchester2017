@@ -9,8 +9,9 @@
     <link href="css/keyboard.css" rel="stylesheet">
     <script src="js/giphy.js"></script>
     <script src="jquery-3.2.1.min.js"></script>
+    <script src="js/morsevalidation.js"></script>
 </head>
-<body onload="load()">
+<body onload="validation()">
 <section id="services" class="services bg-primary text-white">
   <div class="container">
     <div class="row text-center">
@@ -19,7 +20,7 @@
           <div class="form-group">
             <label for="name" class="col-sm-2 control-label">Name</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name.. in morse code please" value="">
+              <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
               <script src="js/keyboard.js"></script>
             </div>
           </div>
