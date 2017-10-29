@@ -1,4 +1,4 @@
-var options = ["Gif-Complaint", "Morse Code", "Text To Speech", "Emoji-Mayhem"];
+
 
 var startAngle = 0;
 var arc = Math.PI / (options.length / 2);
@@ -92,9 +92,9 @@ function spin() {
     location.href = "#";
     location.href = "#canvas";
 
-    spinAngleStart = Math.random() * 10 + 10;
+    spinAngleStart = -2;
     spinTime = 0;
-    spinTimeTotal = Math.random() * 3 + 4 * 1000;
+    spinTimeTotal = 1800;
     rotateWheel();
 }
 
