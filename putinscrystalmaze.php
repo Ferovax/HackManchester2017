@@ -15,28 +15,11 @@
 <h2>You have x time to complete this form</h2>
 <h2>Nuclear launch in:<div id="demo"></div></h2>
 <form class="form-horizontal" role="form" method="post" action="js/form-action.php">
-    <div class="form-group">
-        <label for="name" class="col-sm-2 control-label">Name</label>
-        <div class="col-sm-10">
-            <input type="text" onclick="alertBox()" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
-        </div>
-    </div>
+
     <div class="form-group">
         <label for="email" class="col-sm-2 control-label">Email</label>
         <div class="col-sm-10">
             <input type="email" onclick="alertBox2()" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="message" class="col-sm-2 control-label">Message</label>
-        <div class="col-sm-10">
-            <textarea onclick="alertBox3()" class="form-control" rows="4" name="message"></textarea>
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="human" class="col-sm-2 control-label">8*7-56?</label>
-        <div class="col-sm-10">
-            <input type="number" onclick="alertBox4()" onkeydown="alertBox6()" class="form-control" id="human" name="human" placeholder="Your Answer">
         </div>
     </div>
     <div class="form-group">

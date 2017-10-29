@@ -16,6 +16,12 @@
         <canvas id="retrophone"></canvas>
         <script src="js/rotaryphone.js"></script>
     </div>
+    <div class="row">
+
+    </div>
+    <div class="col-sm-10">
+        <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+    </div>
 </div>
 </form>
 </body>
