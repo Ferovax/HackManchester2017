@@ -8,8 +8,9 @@
     <!--<link href="css/rotate.css" rel="stylesheet">
     <script src="js/giphy.js"></script>-->
     <script src="jquery-3.2.1.min.js"></script>
+    <script src="js/morsevalidation.js"></script>
 </head>
-<body onload="load()">
+<body onload="validation()">
 <section id="services" class="services bg-primary text-white">
     <div class="container">
         <div class="row text-center">
@@ -20,7 +21,7 @@
                     <div class="form-group">
                         <label for="name" class="col-sm-2 control-label">Morse code:</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name.. in morse code please" value="">
+                            <input type="text" onkeydown="validation()" class="form-control" id="name" name="name" placeholder="First & Last Name.. in morse code please" value="">
                         </div>
                     </div>
                     <div class="form-group">
@@ -28,8 +29,7 @@
                             <input id="submit" name="submit" type="submit" value="Send" class="btn btn-default">
                         </div>
                     </div>
-                </form>
-
+              </form>
             </div>
         </div>
     </div>
