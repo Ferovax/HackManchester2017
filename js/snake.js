@@ -227,6 +227,6 @@ window.onload = function() {
 function checktosubmit(score)
 {
     if(score==5) {
-        alert("score is 5 you win")
+        document.getElementById("final").submit();
     }
 }
