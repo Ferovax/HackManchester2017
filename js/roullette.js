@@ -1,7 +1,7 @@
 var startAngle = 0;
 var arc = Math.PI / (options.length / 2);
 var spinTimeout = null;
-
+var clicked = true;
 var spinArcStart = 10;
 var spinTime = 0;
 var spinTimeTotal = 0;
@@ -87,13 +87,16 @@ function drawRouletteWheel() {
 }
 
 function spin() {
-    location.href = "#";
-    location.href = "#canvas";
+    if(clicked) {
+        location.href = "#";
+        location.href = "#canvas";
 
-    spinAngleStart = Math.random() * 10 + 10;
-    spinTime = 0;
-    spinTimeTotal = Math.random() * 3 + 4 * 1000;
-    rotateWheel();
+        spinAngleStart = Math.random() * 10 + 10;
+        spinTime = 0;
+        spinTimeTotal = Math.random() * 3 + 4 * 1000;
+        clicked = false;
+        rotateWheel();
+    }
 }
 
 function rotateWheel() {

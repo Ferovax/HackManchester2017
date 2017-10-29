@@ -38,10 +38,12 @@
                     $("<h3>").text(myemail).appendTo("#elements");
                     $("<h3>").text(mynumber).appendTo("#elements");
                     //$("<h3>").text(mygif).appendTo("#elements");
-                    var opts = mygif.split(",");
-                    for(v in opts){
-                        console.log(opts[v]);
-                        $("<img>").attr("src",opts[v]).appendTo("#elements");
+                    if(mygif != null) {
+                        var opts = mygif.split(",");
+                        for (v in opts) {
+                            console.log(opts[v]);
+                            $("<img>").attr("src", opts[v]).appendTo("#elements");
+                        }
                     }
 
                     sessionStorage.clear();
