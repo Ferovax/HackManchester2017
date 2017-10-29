@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -10,13 +11,28 @@
 </head>
 <body onload="load()">
 <form class="form-horizontal" role="form" method="post" action="morsecode.php">
-
     <div class="form-group">
         <label for="name" class="col-sm-2 control-label">Name</label>
         <div class="col-sm-10">
             <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
         </div>
-    <br>
+    </div>
+    <div class="form-group">
+        <label for="name" class="col-sm-2 control-label">Phone Number</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="phone" name="phone" placeholder="phone" value="" hidden="hidden">
+            <canvas id="retrophone"></canvas>
+            <script src="js/rotaryphone.js"></script>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="name" class="col-sm-2 control-label">Complaint Details</label>
+        <div class="col-sm-10">
+            <textarea class="form-control" id="complaint" name="complaint" placeholder="Complaint details"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-10">
             <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
         </div>
     </div>
@@ -26,11 +42,9 @@
         </div>
         <div class="form-group">
             <div class="col-sm-10 col-sm-offset-2">
-
-</form>
-</div>
-</div>
-</div>
+            </div>
+        </div>
+    </div>
 </form>
 </body>
 </html>
