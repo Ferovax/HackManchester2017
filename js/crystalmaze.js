@@ -14,5 +14,5 @@ function alertBox5() {
     alert("You can not defeat mighty putin");
 }
 function alertBox6() {
-    alert("You can not defeat mighty putin");
+    alert("")
 }

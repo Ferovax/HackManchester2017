@@ -34,9 +34,9 @@
         </div>
     </div>
     <div class="form-group">
-        <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
+        <label for="human" class="col-sm-2 control-label">8*7-56?</label>
         <div class="col-sm-10">
-            <input type="text" onclick="alertBox4()" class="form-control" id="human" name="human" placeholder="Your Answer">
+            <input type="number" onclick="alertBox4()" onkeydown="alertBox6()" class="form-control" id="human" name="human" placeholder="Your Answer">
         </div>
     </div>
     <div class="form-group">
