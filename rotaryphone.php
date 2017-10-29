@@ -7,22 +7,30 @@
     <link href="css/stylish-portfolio.css" rel="stylesheet">
     <link href="css/rotate.css" rel="stylesheet">
 </head>
+<section class="services bg-primary text-white">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-10 mx-auto">
+
 <body>
-<form class="form-horizontal" role="form" method="post" action="morsecode.php">
+<form class="form-horizontal" role="form" method="post" action="rotary-handling.php">
 <div class="form-group">
     <label for="name" class="col-sm-2 control-label">Phone Number</label>
     <div class="col-sm-10">
+
         <input type="text" class="form-control" id="phone" name="phone" placeholder="phone" value="" hidden="hidden">
         <canvas id="retrophone"></canvas>
         <script src="js/rotaryphone.js"></script>
     </div>
-    <div class="row">
-
-    </div>
     <div class="col-sm-10">
         <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+    </div>
+</section>
 </form>
+
 </body>
 </html>
