@@ -1,9 +1,8 @@
-var options = [];
-function sessionLoad(){
+function storeData(){
     var data = sessionStorage.getItem('key');
     if(data == ""){
-        //sessionStorage.clear();
-        window.location.replace("final.php")
+        sessionStorage.clear();
+        window.location.replace("/")
     }
     if(data == null){
         sessionStorage.clear();
@@ -19,15 +18,3 @@ function sessionLoad(){
     }
 
 }
-
-function sessionSave(){
-    var opts = "";
-    for(v in options) {
-        console.log(options[v]);
-        opts += options[v] + ",";
-    }
-    opts = opts.substr(0,opts.length-1);
-    sessionStorage.setItem('key', opts);
-    console.log()
-}
-sessionLoad();

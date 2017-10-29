@@ -4,14 +4,7 @@
     <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="/css/stylish-portfolio.css" rel="stylesheet">
-    <script>
-        function load(){
-            setTimeout(timefunction, 4000);
-        }
-        function timefunction(){
-            window.location.replace("/roulettewheel.php");
-        }
-    </script>
+
 </head>
 <body onload="load()">
 <section class="services bg-primary text-white">
@@ -32,8 +25,18 @@
 
                 // convert morse string to latin
 
-                echo $MorseCodeTranslator->morseToLatin("$name");
+                echo $morse = $MorseCodeTranslator->morseToLatin("$name");
                 ?>
+                    <script>
+                        function load(){
+                            setTimeout(timefunction, 4000);
+                        }
+                        function timefunction(){
+                            sessionStorage.setItem('name', "<?php echo $morse;?>,");
+                            ///alert(sessionStorage.getItem('name'));
+                            window.location.replace("/roulettewheel.php");
+                        }
+                    </script>
                 </h3>
             </div>
         </div>
