@@ -16,8 +16,6 @@
                 <hr class="small">
                 <h3>
                 <?php
-                require('morsecodetranslater.php');
-                $MorseCodeTranslator = new MorseCodeTranslator();
                 $name = $_POST['name'];
                 // convert latin string to morse
                 // - .... .. ...  .. ...  .-  - . ... -
@@ -25,14 +23,14 @@
 
                 // convert morse string to latin
 
-                echo $morse = $MorseCodeTranslator->morseToLatin("$name");
+                echo $name
                 ?>
                     <script>
                         function load(){
                             setTimeout(timefunction, 4000);
                         }
                         function timefunction(){
-                            sessionStorage.setItem('name', "<?php echo $morse;?>,");
+                            sessionStorage.setItem('name', "<?php echo $name;?>,");
                             ///alert(sessionStorage.getItem('name'));
                             window.location.replace("/roulettewheel.php");
                         }
