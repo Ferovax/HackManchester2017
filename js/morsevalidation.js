@@ -7,7 +7,7 @@ function validation() {
 function checkName(evt) {
     var charCode = evt.charCode;
 
-    if (charCode == 45 || charCode == 46) {
+    if (charCode == 45 || charCode == 46 || charCode == 32) {
         return true;
     }
     else {
