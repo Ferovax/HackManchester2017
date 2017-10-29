@@ -9,6 +9,11 @@
     <script src="js/giphy.js"></script>
     <script src="jquery-3.2.1.min.js"></script>
 </head>
+<section id="services" class="services bg-primary text-white">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-10 mx-auto">
+
 <body onload="load()">
 <form class="form-horizontal" role="form" method="post" action="morsecode.php">
     <div class="form-group">
@@ -19,7 +24,7 @@
     </div>
     <div class="form-group">
         <div class="col-sm-10">
-            <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+            <input id="submit" name="submit" type="submit" value="Send" class="btn btn-default">
         </div>
     </div>
     <div class="form-group">
@@ -31,6 +36,10 @@
             </div>
         </div>
     </div>
+</div>
+        </div>
+    </div>
+</section>
 </form>
 </body>
 </html>
