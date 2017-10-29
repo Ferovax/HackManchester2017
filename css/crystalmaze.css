@@ -1,0 +1,36 @@
+@keyframes spinning-dom {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+body {
+    background-image: image("") ;
+}
+form {
+    -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+    animation-delay: 2s;
+    animation-name: spinning-dom;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    padding: 50px;
+}
+@keyframes example {
+    0%   {background-color:red; left:200px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+
+}
+
+/* The element to apply the animation to */
+div .col-sm-10 {
+
+    position: relative;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+}
