@@ -49,18 +49,18 @@ function dataLoad(data) {
         //console.log(item);
         console.log(item["images"]["original"]["url"]);
         var divtag = $("<div>").attr("class","col-md-2 thumbnail").appendTo("#imageSelection");
-        var atag = $("<a>").attr("href", "javascript:submitImage('" + item["images"]["fixed_width_small_still"]["url"] + "')").appendTo(divtag);
-        $("<img>").attr("src", item["images"]["fixed_width_small_still"]["url"]).attr("style","width:100%").appendTo(atag);
+        var atag = $("<a>").attr("href", "javascript:submitImage('" + item["images"]["original"]["url"] + "')").appendTo(divtag);
+        $("<img>").attr("src", item["images"]["original"]["url"]).attr("style","width:100%").appendTo(atag);
     });
 }
 
 function submitImage(uri, text){
     var divtag = $("<div>").attr("class","col-md-2 thumbnail").appendTo("#imageSubmission");
-    $("<img>").attr("src", uri).appendTo(divtag);
+    $("<img>").attr("src", uri).attr("style","width:100%").appendTo(divtag);
     $("#urls").val($("#urls").val() + uri + ",");
     var text = $("#searchBox").val();
     var captag = $("<div>").attr("class","caption").appendTo(divtag);
-    $("<p>").text(text.substring(0,text.length-2)).appendTo(captag);
+    $("<p>").text(text.substring(0,text.length-1)).appendTo(captag);
     $("#imageSelection").html("");
     $("#searchBox").val("");
 }

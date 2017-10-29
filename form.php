@@ -12,7 +12,7 @@
     <div class="container">
         <div class="row text-center">
             <div class=" mx-auto">
-                <img src="https://media.giphy.com/media/N57KpqDb0tlWE/giphy.gif">
+                <!--<img src="https://media.giphy.com/media/N57KpqDb0tlWE/giphy.gif">-->
                 <h2> Gif complaint form </h2>
                 <hr class="small">
                 <form class="form-horizontal" role="form" id="myform" method="post" action="js/form-action.php">
@@ -22,21 +22,17 @@
                             <input type="text" class="form-control" id="searchBox" name="searchBox" placeholder="Start typing to search gifs to complain" value="">
                         </div>
                     </div>
-                    <div class="row" id="imageSelection" style="height:100px; clear:both;">
+                    <div class="row" id="imageSelection" style="min-height:100px; clear:both;">
 
                     </div>
                     <hr class="small">
-                    <div class="row" id="imageSubmission"  style="height:100px; clear:both;">
+                    <div class="row" id="imageSubmission"  style="min-height:100px; clear:both;">
 
                     </div>
+                    <hr class="small">
                     <div class="form-group">
                         <div class="">
                             <input id="submit" name="submit" type="submit" value="Send" class="btn btn-default">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="">
-                            <! Will be used to display an alert to the user>
                         </div>
                     </div>
                     <input id="urls" name="urls" type="text" hidden>
