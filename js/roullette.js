@@ -112,13 +112,13 @@ function rotateWheel() {
 var text;
 function displayResultName() {
     if(text=="Name") {
-        window.location.replace("form.php")
+        window.location.replace("morseform.php")
     }
     else if(text=="Email") {
-        window.location.replace("form.php")
+        window.location.replace("putinscrystalmaze.php")
     }
     else if(text=="Phone Number") {
-        window.location.replace("morseform.php")
+        window.location.replace("rotaryphone.php")
     }
     else if(text=="Complaint") {
         window.location.replace("form.php")
