@@ -9,7 +9,7 @@
             //setTimeout(timefunction, 2000);
         }
         function timefunction(){
-            window.location.replace("/");
+            window.location.replace("/roulettewheel.php");
         }
     </script>
 </head>
@@ -38,7 +38,7 @@ $sql = "INSERT INTO urls (ID, urlString) VALUES (NULL , '$urls')";
                     if ($result === TRUE) {
                         echo "We have reviewed your complaint, are you sure it wasn't your fault?";
                         echo "<hr class=\"small\">";
-                        echo "<a href='/' class='btn btn-primary'> No </a>";
+                        echo "<a href='/roulettewheel.php' class='btn btn-primary'> No </a>";
                     } else {
                         echo "Error: " . $sql . "<br>" . $conn->error;
                     }
