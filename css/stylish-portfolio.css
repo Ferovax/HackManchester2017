@@ -259,3 +259,11 @@ footer {
   display: none;
   padding: 15px 20px;
 }
+
+#complaint {
+  margin: 0;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 100%;
+}

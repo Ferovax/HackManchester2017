@@ -18,20 +18,6 @@
         </div>
     </div>
     <div class="form-group">
-        <label for="name" class="col-sm-2 control-label">Phone Number</label>
-        <div class="col-sm-10">
-            <input type="text" class="form-control" id="phone" name="phone" placeholder="phone" value="" hidden="hidden">
-            <canvas id="retrophone"></canvas>
-            <script src="js/rotaryphone.js"></script>
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="name" class="col-sm-2 control-label">Complaint Details</label>
-        <div class="col-sm-10">
-            <textarea class="form-control" id="complaint" name="complaint" placeholder="Complaint details"></textarea>
-        </div>
-    </div>
-    <div class="form-group">
         <div class="col-sm-10">
             <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
         </div>
