@@ -1,5 +1,3 @@
-
-
 var startAngle = 0;
 var arc = Math.PI / (options.length / 2);
 var spinTimeout = null;
@@ -111,16 +109,16 @@ function rotateWheel() {
 }
 var text;
 function displayResultName() {
-    if(text=="Gif-Complaint") {
-        window.location.replace("form.php")
-    }
-    else if(text=="Text To Speech") {
-        window.location.replace("form.php")
-    }
-    else if(text=="Morse Code") {
+    if(text=="Name") {
         window.location.replace("morseform.php")
     }
-    else if(text=="Emoji Mayhem") {
+    else if(text=="Email") {
+        window.location.replace("putinscrystalmaze.php")
+    }
+    else if(text=="Phone Number") {
+        window.location.replace("rotaryphone.php")
+    }
+    else if(text=="Complaint") {
         window.location.replace("form.php")
     }
 }

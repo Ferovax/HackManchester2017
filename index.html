@@ -53,21 +53,16 @@
     <h1>Red Summit Support</h1>
     <h3>The most interesting complaint system in the galaxy</h3>
     <br>
-    <a href="#services" class="btn btn-dark btn-lg js-scroll-trigger">Make a complaint</a>
+    <a href="#complaint" class="btn btn-dark btn-lg js-scroll-trigger">Make a complaint</a>
   </div>
 </header>
-
-
-
 <!-- Services -->
 <section id="services" class="services bg-primary text-white">
   <div class="container">
     <div class="row text-center">
       <div class="col-lg-10 mx-auto">
         <h2>Search for a company to annoy about their service</h2>
-
         <h2>Services</h2>
-
         <hr class="small">
         <div class="row">
           <div class="col-md-3 col-sm-6">
@@ -132,22 +127,25 @@
   <!-- /.container -->
 </section>
 <!--/.wheel-->
-<section class="bg-info text-white row text-center">
-  <div class="col-lg-10 mx-auto center-block">
-
-    <hr class="small">
-    <h2>
-      Spin the wheel to make a complaint!
-    </h2>
-    <hr class="small">
-    <input href="#canvas" id="spin" name="submit" type="button" value="spin" class="btn btn-default">
-    <hr class="small">
-  </div>
-</section>
-<section class="bg-success text-white row text-center">
-  <div class="col-lg-10 mx-auto center-block">
-    <canvas id="canvas" width="500" height="500"></canvas>
-    <script src="js/roullette.js"></script>
+<section id="complaint" class="bg-info text-white row text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto center-block">
+        <hr class="small">
+        <h2>
+          Spin the wheel to make a complaint!
+        </h2>
+        <hr class="small">
+        <input href="#canvas" id="spin" name="submit" type="button" value="spin" class="btn btn-default">
+        <hr class="small">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-10 mx-auto center-block">
+        <canvas id="canvas" width="500" height="500"></canvas>
+        <script src="js/roullette.js"></script>
+      </div>
+    </div>
   </div>
 </section>
 
