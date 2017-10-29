@@ -53,7 +53,7 @@
     </div>
 </section>
 <script src="js/snake.js"></script>
-<h3>Get a score of 5 to submit you're form. Just checking you're human!</h3>
+<h3>Get a score of 5 to submit your form. Just checking you're human!</h3>
 <canvas id="stage" height="400" width="520"></canvas>
 </body>
 </html>
