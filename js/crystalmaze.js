@@ -2,7 +2,7 @@ function alertBox() {
     alert("You can not defeat mighty putin");
 }
 function alertBox2() {
-    alert("Red Summit is too strong for you");
+    alert("By submitting your email you are signing up to our newsletter.");
 }
 function alertBox3() {
     alert("The fury is strong in this one");

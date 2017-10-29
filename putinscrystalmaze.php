@@ -12,18 +12,20 @@
 </head>
 <body onload="load()">
 <section id="complaint" class="bg-primary text-white row text-center">
-    <h2>Nuclear launch in:<div id="demo"></div></h2>
-    <form class="form-horizontal" role="form" method="post" action="putinscrystalmazehandling.php">
+    <h2>You have <div id="demo"></div> to enter your email!</h2>
+
+    <form id="myform" class="form-horizontal" role="form" method="post" action="putinscrystalmazehandling.php">
 
         <div class="form-group">
             <label for="email" class="col-sm-2 control-label">Email</label>
             <div class="col-sm-10">
-                <input type="email" onclick="alertBox2()" class="form-control" id="email" name="email" placeholder="example@domain.com" value="" required>
+                <input type="email" onclick="alertBox2()" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
             </div>
         </div>
         <div class="form-group">
             <div class="col-sm-10 col-sm-offset-2">
-                <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+                <input type="button" onclick="myFunction()" value="Submit">
+                <!--<input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">-->
             </div>
         </div>
     </form>
