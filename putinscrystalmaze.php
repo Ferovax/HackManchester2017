@@ -14,12 +14,12 @@
 <h1>Welcome to Putin's Crystal Maze.</h1>
 <h2>You have x time to complete this form</h2>
 <h2>Nuclear launch in:<div id="demo"></div></h2>
-<form class="form-horizontal" role="form" method="post" action="js/form-action.php">
+<form class="form-horizontal" role="form" method="post" action="putinscrystalmazehandling.php">
 
     <div class="form-group">
         <label for="email" class="col-sm-2 control-label">Email</label>
         <div class="col-sm-10">
-            <input type="email" onclick="alertBox2()" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
+            <input type="email" onclick="alertBox2()" class="form-control" id="email" name="email" placeholder="example@domain.com" value="" required>
         </div>
     </div>
     <div class="form-group">
