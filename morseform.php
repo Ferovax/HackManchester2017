@@ -9,12 +9,12 @@
     <script src="js/giphy.js"></script>
     <script src="jquery-3.2.1.min.js"></script>
 </head>
+<body onload="load()">
 <section id="services" class="services bg-primary text-white">
     <div class="container">
         <div class="row text-center">
             <div class="col-lg-10 mx-auto">
 
-<body onload="load()">
 <form class="form-horizontal" role="form" method="post" action="morsecode.php">
     <div class="form-group">
         <label for="name" class="col-sm-2 control-label">Name</label>
