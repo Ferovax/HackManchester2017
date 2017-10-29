@@ -44,7 +44,7 @@
                         $("<img>").attr("src",opts[v]).appendTo("#elements");
                     }
 
-                    //sessionStorage.clear();
+                    sessionStorage.clear();
                 </script>
 
                 </div>
