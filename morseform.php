@@ -14,18 +14,18 @@
 <section id="services" class="services bg-primary text-white">
     <div class="container">
         <div class="row text-center">
-            <div class="col-lg-10 mx-auto">
+            <div class=" mx-auto">
                 <h2> Morse Code name Form</h2>
                 <hr class="small">
                 <form class="form-horizontal" role="form" id="myform" method="post" action="morsecode.php">
                     <div class="form-group">
-                        <label for="name" class="col-sm-2 control-label">Morse code:</label>
-                        <div class="col-sm-10">
+                        <label for="name" class=" control-label">Morse code:</label>
+                        <div class="">
                             <input type="text" onkeydown="validation()" class="form-control" id="name" name="name" placeholder="First & Last Name.. in morse code please" value="">
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="col-sm-10 col-sm-offset-2">
+                        <div class="">
                             <input id="submit" name="submit" type="submit" value="Send" class="btn btn-default">
                         </div>
                     </div>

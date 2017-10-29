@@ -13,14 +13,14 @@
 <section id="services" class="services bg-primary text-white">
     <div class="container">
         <div class="row text-center">
-            <div class="col-lg-10 mx-auto">
+            <div class="mx-auto">
                 <h2> Morse Code name Form</h2>
                 <hr class="small">
                 <form class="form-horizontal" role="form" id="myform" method="post" action="rotary-handling.php">
 
                     <div class="form-group">
                         <label for="name" class="control-label">Phone Number</label>
-                        <div class="col-sm-10">
+                        <div class="">
 
                             <input type="text" class="form-control" id="phone" name="phone" placeholder="phone" value="" hidden="hidden" required>
                             <canvas id="retrophone"></canvas>
@@ -28,8 +28,8 @@
                         </div>
                     </div>
                     <div class="form-group">
-                    <div class="col-sm-10">
-                        <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+                    <div class="">
+                        <input id="submit" name="submit" type="submit" value="Send" class="btn btn-default">
                     </div>
                     </div>
 
