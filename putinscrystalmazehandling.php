@@ -9,6 +9,8 @@
             setTimeout(timefunction, 4000);
         }
         function timefunction(){
+            sessionStorage.setItem('email', "<?php echo $_POST['email'];?>,");
+           // alert(sessionStorage.getItem('email'));
             window.location.replace("/roulettewheel.php");
         }
     </script>
