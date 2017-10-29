@@ -4,6 +4,23 @@ function load(){
 
     /*var xhr = $.get("http://api.giphy.com/v1/gifs/search?q="+q+"&api_key="+gifkey+"&limit=5");
     xhr.done(dataLoad);*/
+    $('#myform').submit(function() {
+        if($("#urls").val() == ""){
+            var q = $("#searchBox").val();
+            if(q == ""){
+                alert("Please enter a gif to complain with");
+            }else{
+                var xhr = $.get("http://api.giphy.com/v1/gifs/search?q="+q+"&api_key="+gifkey+"&limit=5");
+                xhr.done(function(data) {
+                    dataLoad(data);
+                    alert("Please select a gif to complain with");
+                });
+            }
+            return false;
+        }else{
+            return true;
+        }
+    });
 
     $("#searchBox").keyup(function(){
         var q = $("#searchBox").val();

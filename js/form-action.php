@@ -6,7 +6,7 @@
     <link href="/css/stylish-portfolio.css" rel="stylesheet">
     <script>
         function load(){
-            setTimeout(timefunction, 2000);
+            //setTimeout(timefunction, 2000);
         }
         function timefunction(){
             window.location.replace("/");
@@ -36,7 +36,9 @@ $sql = "INSERT INTO urls (ID, urlString) VALUES (NULL , '$urls')";
                 <h2> <?php
                     $result = $conn->query($sql);
                     if ($result === TRUE) {
-                        echo "Your complaint was submitted succesfully!";
+                        echo "We have reviewed your complaint, are you sure it wasn't your fault?";
+                        echo "<hr class=\"small\">";
+                        echo "<a href='/' class='btn btn-primary'> No </a>";
                     } else {
                         echo "Error: " . $sql . "<br>" . $conn->error;
                     }

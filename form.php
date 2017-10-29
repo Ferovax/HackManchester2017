@@ -12,10 +12,10 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-lg-10 mx-auto">
-
+                <img src="https://media.giphy.com/media/N57KpqDb0tlWE/giphy.gif">
                 <h2> Gif complaint form </h2>
                 <hr class="small">
-                <form class="form-horizontal" role="form" method="post" action="js/form-action.php">
+                <form class="form-horizontal" role="form" id="myform" method="post" action="js/form-action.php">
                     <div class="form-group">
                         <label for="name" class="col-sm-2 control-label">Gif-SearchBox</label>
                         <div class="col-sm-10">
