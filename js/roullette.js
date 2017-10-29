@@ -1,4 +1,4 @@
-var options = ["Gif-Complaint", "Morse Code", "Text To Speech", "Emoji-Mayhem"];
+var options = ["Complaint", "Name", "Phone Number", "Email"];
 
 var startAngle = 0;
 var arc = Math.PI / (options.length / 2);
@@ -111,16 +111,16 @@ function rotateWheel() {
 }
 var text;
 function displayResultName() {
-    if(text=="Gif-Complaint") {
+    if(text=="Name") {
         window.location.replace("form.php")
     }
-    else if(text=="Text To Speech") {
+    else if(text=="Email") {
         window.location.replace("form.php")
     }
-    else if(text=="Morse Code") {
+    else if(text=="Phone Number") {
         window.location.replace("morseform.php")
     }
-    else if(text=="Emoji Mayhem") {
+    else if(text=="Complaint") {
         window.location.replace("form.php")
     }
 }
