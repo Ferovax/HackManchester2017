@@ -6,7 +6,7 @@
     <link href="/css/stylish-portfolio.css" rel="stylesheet">
     <script>
         function load(){
-            setTimeout(timefunction, 4000);
+            setTimeout(timefunction, 2000);
         }
         function timefunction(){
             window.location.replace("/roulettewheel.php");
@@ -19,21 +19,12 @@
         <div class="row text-center">
             <div class="col-lg-10 mx-auto">
 
-                <h2> You entered your name:  </h2>
+                <h2> You entered your phone number:  </h2>
                 <hr class="small">
                 <h3>
-                <?php
-                require('morsecodetranslater.php');
-                $MorseCodeTranslator = new MorseCodeTranslator();
-                $name = $_POST['name'];
-                // convert latin string to morse
-                // - .... .. ...  .. ...  .-  - . ... -
-                //echo $MorseCodeTranslator->latinToMorse("$name"),"\n";
-
-                // convert morse string to latin
-
-                echo $MorseCodeTranslator->morseToLatin("$name");
-                ?>
+                    <?php
+                    echo $_POST['phone'];
+                    ?>
                 </h3>
             </div>
         </div>
