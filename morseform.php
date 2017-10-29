@@ -8,18 +8,19 @@
     <link href="css/rotate.css" rel="stylesheet">
     <script src="js/giphy.js"></script>
     <script src="jquery-3.2.1.min.js"></script>
+    <script src="js/morsevalidation.js"></script>
 </head>
 <section id="services" class="services bg-primary text-white">
     <div class="container">
         <div class="row text-center">
             <div class="col-lg-10 mx-auto">
 
-<body onload="load()">
+<body onload="validation()">
 <form class="form-horizontal" role="form" method="post" action="morsecode.php">
     <div class="form-group">
         <label for="name" class="col-sm-2 control-label">Name</label>
         <div class="col-sm-10">
-            <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name.. in morse code please" value="">
+            <input type="text" onkeydown="validation()"  class="form-control" id="name" name="name" placeholder="First & Last Name.. in morse code please" value="">
         </div>
     </div>
     <div class="form-group">
