@@ -1,22 +1,22 @@
 @keyframes spinning-dom {
     from {
-        transform: rotate(0deg);
+        transform: rotate(-40deg);
     }
     to {
-        transform: rotate(360deg);
+        transform: rotate(45deg);
     }
 }
 body {
     background-image: image("") ;
 }
 form {
-    -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
-    animation-delay: 2s;
+
     animation-name: spinning-dom;
-    animation-duration: 60s;
+    animation-duration: 30s;
     animation-iteration-count: infinite;
     padding: 50px;
 }
+
 @keyframes example {
     0%   {background-color:red; left:200px; top:0px;}
     25%  {background-color:yellow; left:200px; top:0px;}
