@@ -227,6 +227,6 @@ window.onload = function() {
 function checktosubmit(score)
 {
     if(score==5) {
-        document.getElementById("final").submit();
+        window.location.href = "index.html";
     }
 }

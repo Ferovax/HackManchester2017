@@ -5,6 +5,9 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="/css/stylish-portfolio.css" rel="stylesheet">
     <script src="jquery-3.2.1.min.js"></script>
+
+    <link href="css/snake.css" rel="stylesheet">
+
     <script>
         function load(){
             setTimeout(timefunction, 6000);
@@ -40,12 +43,17 @@
                         console.log(opts[v]);
                         $("<img>").attr("src",opts[v]).appendTo("#elements");
                     }
+
                     //sessionStorage.clear();
                 </script>
+
                 </div>
             </div>
         </div>
     </div>
 </section>
+<script src="js/snake.js"></script>
+<h3>Get a score of 5 to submit you're form. Just checking you're human!</h3>
+<canvas id="stage" height="400" width="520"></canvas>
 </body>
 </html>
