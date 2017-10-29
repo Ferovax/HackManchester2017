@@ -371,7 +371,7 @@ RPH.init = function() {
 
 RPH.resizeCanvas = function() {
 
-    RPH.canvas.width = window.innerWidth;
+    //RPH.canvas.width = window.innerWidth;
     RPH.canvas.height = 400;
     RPH.W = RPH.canvas.width;
     RPH.H = RPH.canvas.height;
